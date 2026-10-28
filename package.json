@@ -1,0 +1,30 @@
+{
+  "name": "returns-agent",
+  "version": "1.0.0",
+  "description": "AI customer-support agent for returns, with a custom harness and evals",
+  "scripts": {
+    "chat": "tsx src/cli/chat.ts",
+    "eval": "tsx src/evals/run.ts",
+    "test": "tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "regrade": "tsx src/evals/regrade.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@ai-sdk/openai": "^4.0.103",
+    "@lmnr-ai/lmnr": "^0.8.51",
+    "ai": "^7.0.154",
+    "dotenv": "^18.0.9",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "overrides": {
+    "@opentelemetry/api": "1.10.0"
+  }
+}
